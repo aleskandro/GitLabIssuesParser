@@ -65,7 +65,7 @@ function _get_query()
 function _get_url($base_url)
 {
         $resource = "";
-        if (null !== (_GET['group']))
+        if (null !== ($_GET['group']))
                 $resource = "/groups/${_GET['group']}/";
         elseif(null !== $_GET['project'] && null !== $_GET['user'])
                 $resource = "/${_GET['user']}/${_GET['project']}";
